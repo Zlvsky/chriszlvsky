@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Shadows+Into+Light&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Chris Zlvsky portfolio"/>
+  <meta property="og:image" content="images/mini.JPG">
+
+  <title>Chris Zlvsky</title>
+</head>
+<body id="stopScroll">
+
+  <nav class="navbar">
+    <div class="nav-wrap">
+
+      <div class="title">
+        <a href="/" class="logo">chris <br> zlvsky</a>
+      </div>
+
+      <div class="menu-normal">
+        <a href="/" class="menu-text">people</a>
+        <a href="other.html" class="menu-text">other</a>
+        <a href="about.html" class="menu-text">about me</a>
+      </div>
+
+      <div id="menu-hamburger">
+        <input type="checkbox" id="myCheck"/>
+            <span></span>
+            <span></span>
+            <span></span>
+      </div>
+
+    </div>
+  </nav>
+
+  <nav id="main-navigation" role="navigation">
+      <ul id="menu">
+        <a href="/"><li>portraits book</li></a>
+        <a href="other.html"><li>other stuff book</li></a>
+        <a href="about.html"><li>about me</li></a>
+      </ul>
+    </nav>
+
+  <content>
+    <div class="slider" id='slider'>
+      <img src="images/leftk.png" class="arrow-left hidden" id='prev' alt="">
+
+
+        <img src="images/rightk.png" class="arrow-right hidden" id='next' alt="">
+        <div class="slider-wrap" id="slides">
+          <img src="images/portraits/1.JPG" alt="" class="slide img img1" id="firstClone">
+          <img src="images/portraits/2.JPG" alt="" class="slide img img2">
+          <img src="images/portraits/3.JPG" alt="" class="slide img img3">
+          <img src="images/portraits/4.JPG" alt="" class="slide img img4">
+          <img src="images/portraits/5.JPG" alt="" class="slide img img5">
+          <img src="images/portraits/6.JPG" alt="" class="slide img img6">
+          <img src="images/portraits/7.JPG" alt="" class="slide img img7">
+          <img src="images/portraits/8.JPG" alt="" class="slide img img8" >
+          <img src="images/portraits/9.JPG" alt="" class="slide img img9" >
+          <img src="images/portraits/10.JPG" alt="" class="slide img img10">
+          <img src="images/portraits/11.JPG" alt="" class="slide img img11">
+          <img src="images/portraits/12.JPG" alt="" class="slide img img12">
+          <img src="images/portraits/13.JPG" alt="" class="slide img img13">
+          <img src="images/portraits/14.JPG" alt="" class="slide img img14">
+          <img src="images/portraits/15.JPG" alt="" class="slide img img15">
+          <img src="images/portraits/16.JPG" alt="" class="slide img img16" id="lastClone">
+        </div>
+    </div>
+  </content>
+
+
+
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+<script src="appjquery.js" charset="utf-8"></script>
+<script src="hamburger.js" charset="utf-8"></script>
+</html>
