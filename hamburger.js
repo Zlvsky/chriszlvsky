@@ -1,20 +1,10 @@
-var navi = document.getElementById('main-navigation');
-var hamburger = document.getElementById('menu-hamburger');
-var check = document.getElementById('myCheck');
-check.addEventListener('click', function essa(){
-  if (check.checked == true){
-      navi.style.transform = "translateX(0)";
-      navi.style.zIndex = "15";
-      document.getElementById('stopScroll').style.overflow = 'hidden';
+var navi = document.getElementById('main-navigation'),
+    hamburger = document.getElementById('menu-hamburger'),
+    input = document.getElementById('myCheck'),
+    stopScroll = document.getElementById('stopScroll');
 
-  } else {
-    navi.style.transform = "translateX(-100%)";
-    document.getElementById('stopScroll').style.overflow = 'auto';
-    document.getElementById('stopScroll').style.overflowX = 'hidden';
-    setTimeout(function() {
-      navi.style.zIndex = "0";
-    }, 600);
-    
-
-  }
-}, false);
+input.onchange = function() {
+  navi.style.transform = this.checked? 'none': 'translateX(-100%)';
+  navi.style.zIndex = this.checked? '15': setTimeout('0', 600);
+  stopScroll.style.overflow = this.checked? 'hidden': 'auto';
+}
